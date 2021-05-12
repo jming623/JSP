@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- form태그안에 테이블태그를 넣고 테이블안에 입력양식을 이용해서 예시화면을 작성합니다. -->
+	<!-- input태그도 식별을 위해 name을 지정해주어야 한다. -->
+	<form>
+		<h2>Emp 정보</h2>	
+		<hr width="40%" align="left">
+	<table>
+		<tr align="left">
+			<th>사원번호:</th>
+			<td><input type="text" size="20" name="emp"></td>		
+		</tr>	
+			
+		<tr align="left">
+			<th>이름:</th>
+			<td><input type="text" size="20" name="name"></td>
+		</tr>
+		
+		<tr align="left">
+			<th>성별:</th>
+			<td>
+			<input type="radio" name="gender">남자
+			<input type="radio" name="gender">여자
+			</td>
+		</tr>
+		
+		<tr align="left">
+			<th>직업:</th>
+			<td><input type="text" size="20" name="job"></td>
+		</tr>	
+	
+		<tr align="left">
+			<th>상사:</th>
+			<td>
+				<select name="manager">
+					<option>1234</option>
+					<option>5678</option>
+					<option>9012</option>
+					<option>7369</option>
+				</select>			
+			</td>
+		</tr>
+		
+		<tr align="left">
+			<th>입사일:</th>
+			<td><input type="text" size="20" name="hiredate" placeholder="2021-01-01"></td>
+		</tr>
+		
+		<tr align="left">
+			<th>급여:</th>
+			<td><input type="text" size="20" name="salary"></td>
+		</tr>
+		
+		<tr align="left">
+			<th>커미션:</th>
+			<th><input type="text" size = "20" name="committion"></th>
+		</tr>
+		
+		<tr align="left">
+			<th>부서번호</th>
+			<td>
+				<select name="department">
+					<option>10 회계팀</option>
+					<option>20 홍보팀</option>
+					<option>30 영업팀</option>
+					<option>40 개발팀</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr align="center">
+			<td colspan="2">
+				<input type="submit" value="저장">
+				<input type="reset" value="취소">
+			</td>
+		</tr>
+	
+	</table>
+	
+	</form>
+</body>
+</html>
