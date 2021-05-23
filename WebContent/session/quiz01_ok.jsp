@@ -11,7 +11,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%=user.getId() %>( <%=user.getName() %>)님 환영합니다. <br/>
+	<%=user.getId() %>( <%=user.getName() %>)님 환영합니다! <br/>
 	region: <%=user.getRegion() %> <br/>
 </body>
 </html>
