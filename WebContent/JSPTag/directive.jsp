@@ -1,3 +1,4 @@
+<%@page import="java.util.Iterator"%>
 <%@page import="java.util.HashSet"%>
 <%@page import="java.util.Set"%>
 <%@page import="java.util.HashMap"%>
@@ -48,36 +49,33 @@
 	셋:<%=set.toString() %><br/> <!-- Iterator나 향상된for문으로 -->
 	
 	<hr/>
-	<%for(int i = 0; i < list.size() ; i++){ %>
-		리스트:<%=list.get(i) %> <br/>	
+	<!-- list호출 -->
+	
+	<%for(int i = 0; i<list.size(); i++){ %>
+		리스트:<%=list.get(i) %> <br>
 	<%} %>
 	
+	<!-- map호출 -->
 	
-	<%	Set<Entry<Integer,String>> eset = map.entrySet(); %>
-		
-	<%	for(Entry<Integer,String> s : eset){ %>
-			(맵) 키: <%=s.getKey() %> 값: <%=s.getValue() %> <br/>
-	<%	} %>
+	<%Set<Entry<Integer, String>> eset = map.entrySet(); %>
 	
+	<%for(Entry<Integer,String>s:eset) {%>
+		맵(키)(값): <%=s.getKey() %>,<%=s.getValue() %><br>
+	<%} %>
 	
-	 <h4>리스트</h4>
-	 <% for(int i = 0; i < list.size() ; i++){ %>
-		<%=list.get(i) %> 
-	 <% } %>
-		 
-	 <h4>맵</h4>	 
-	 <% Set<Entry<Integer,String>> entSet = map.entrySet();	 
-	 	for(Entry<Integer,String> e :entSet){ %>
-	 		<%=e.getKey() %>
-	 		<%=e.getValue() %>
-	 <% }  %>
+	<!-- set호출(Iterator) -->
 	
-	<h4>SET</h4>
-		<%for(Integer i : set){ %>
-			<%= i %>
-		<%} %>
-		
+	<%Iterator<Integer> iter = set.iterator(); %>
 	
+	<%while(iter.hasNext()){ %>
+		set: <%=iter.next() %> <br>
+	<%} %>
+	
+	<!-- set호출(향상된 for문) -->
+	
+	<% for(Integer i:set) {%>
+		set: <%=i %> <br>
+	<%} %>
 	
 </body>
 </html>
