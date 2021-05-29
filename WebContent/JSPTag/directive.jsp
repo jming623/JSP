@@ -1,3 +1,4 @@
+<%@page trimDirectiveWhitespaces="true" %> <!-- 소스보기에 디렉티브나 스크립트코드로인해 생긴 공백이 사라짐 -->
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.HashSet"%>
 <%@page import="java.util.Set"%>
