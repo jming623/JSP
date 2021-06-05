@@ -32,7 +32,7 @@
 		<input type="checkbox" name="inter" value = "DB">DB
 		<br/>
 		
-		<!-- name으로 통일을 시키지않으면 따로따로 처리되어 여러개를 선택할 수 있게된다.-->
+		<!-- name으로 통일을 시키지않으면 따로따로 처리되어 여러개를 선택할 수 없게된다.-->
 		전공:
 		<input type="radio" name="major" value = "경영학">경영학
 		<input type="radio" name="major" value = "전산학">전산학
